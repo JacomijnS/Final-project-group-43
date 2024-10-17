@@ -15,11 +15,18 @@ def get_metric(name: str):
 class Metric(...):
     """Base class for all metrics.
     """
-    # your code here
     # remember: metrics take ground truth and prediction as input and return a real number
+    # Code by Jasmijn implemented below
+    def __init__(self, name: str) -> None:
+        if name not in METRICS:
+            raise ValueError(f"Invalid metric name: {name}")
+        self.name = name
 
-    def __call__(self):
+    def __call__(self, ground_truth, prediction) -> float:
         raise NotImplementedError("To be implemented.")
 
+# what you can do now:
+# accuracy_metric = Metric("accuracy")
+# accuracy = accuracy_metric(ground_truth, prediction)
+
 # add here concrete implementations of the Metric class
-    

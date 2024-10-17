@@ -154,9 +154,9 @@ If you did not implement the feature
 | Requirement                           | Type (FN/NF) | Implemented by       | Implementation Completed (add X if done) | Comment |
 |-------------------------------------- |--------------|----------------------|--------------------------|---------|         
 | Up-to-date requirements.txt           | NF           |                      |         | |
-| `ML/detect-features`                  | FN           |                      |         | |
+| `ML/detect-features`                  | FN           | Jasmijn              |    X    | |
 | `ML/artifact`                         | NF           |                      |         | |
-| `ML/feature`                          | NF           |                      |         | |
+| `ML/feature`                          | NF           | Jasmijn              |    X    | |
 | `ML/metric`                           | NF           |                      |         | |
 | `ML/metric/extensions`                | FN           |                      |         | |
 | `ML/model`                            | NF           |                      |         | |
